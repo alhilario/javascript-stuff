@@ -1,47 +1,47 @@
-var userChoice = prompt("Do you choose rock, paper or scissors?");
+var userChoice = prompt("Eliges piedra, papel o tijera?");
 var computerChoice = Math.random();
 if (computerChoice < 0.34) {
-	computerChoice = "rock";
+computerChoice = "piedra";
 } else if(computerChoice <= 0.67) {
-	computerChoice = "paper";
+computerChoice = "papel";
 } else {
-	computerChoice = "scissors";
+computerChoice = "tijera";
 }
 
 var compare = function(choice1, choice2) {
     if (choice1 === choice2) {
-        return "The result is a tie!";
+        return "Empate, vuelve a intentarlo";
     };
     
-    if (choice1 === "rock") {
-        if (choice2 === "scissors") {
-            return "rock wins";
+    if (choice1 === "piedra") {
+        if (choice2 === "tijera") {
+            return "piedra gana";
         } else {
-            return "paper wins";
+            return "papel gana";
         };
     };
     
-    if (choice2 === "rock") {
-        if (choice1 === "scissors") {
-            return "rock wins";
+    if (choice2 === "piedra") {
+        if (choice1 === "tijera") {
+            return "piedra gana";
         } else {
-            return "paper wins";
+            return "papel gana";
         };
     };
     
-    if (choice1 === "scissors") {
-        if (choice2 === "rock") {
-            return "rock wins";
+    if (choice1 === "tijera") {
+        if (choice2 === "piedra") {
+            return "piedra gana";
         } else {
-            return "scissors wins";
+            return "tijera gana";
         };
     };
     
-    if (choice2 === "scissors") {
-        if (choice1 === "rock") {
-            return "rock wins";
+    if (choice2 === "tijera") {
+        if (choice1 === "piedra") {
+            return "piedra gana";
         } else {
-            return "scissors wins";
+            return "tijera gana";
         };
     };
 };
