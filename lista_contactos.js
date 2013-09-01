@@ -1,28 +1,30 @@
 var friends = {};
+
 friends.bill = {
-  firstName: "Bill",
-  lastName: "Gates",
-  number: "(206) 555-5555",
-  address: ['One Microsoft Way','Redmond','WA','98052']
+    firstName: "Bill",
+    lastName: "Gate",
+    number: "809-809-8090",
+    address: ["multiples", "direcciones"]
 };
+
 friends.steve = {
-  firstName: "Steve",
-  lastName: "Jobs",
-  number: "(408) 555-5555",
-  address: ['1 Infinite Loop','Cupertino','CA','95014']
+    firstName: "Steve",
+    lastName: "Jobs",
+    number: "444-555-6666",
+    address: ["Como vamos", "Multiple direciones"]
 };
 
 var list = function(obj) {
-  for(var prop in obj) {
-    console.log(prop);
-  }
+    for(var pao in obj) {
+        console.log(pao);
+    };
 };
 
 var search = function(name) {
-  for(var prop in friends) {
-    if(friends[prop].firstName === name) {
-      console.log(friends[prop]);
-      return friends[prop];
+  for(var pao in friends) {
+    if(friends[pao].firstName === name) {
+      console.log(friends[pao]);
+      return friends[pao];
     }
   }
 };
